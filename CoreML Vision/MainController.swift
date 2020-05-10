@@ -10,12 +10,12 @@ import UIKit
 import AVFoundation
 import Vision
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class MainController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     let label: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Label"
+        label.text = "Take WastePicture"
         label.font = label.font.withSize(30)
         return label
     }()
@@ -28,9 +28,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         view.addSubview(label)
         setupLabel()
     }
-    
-    
-    
+
     func setupCaptureSession() {
         
         // creates a new capture session
