@@ -10,12 +10,12 @@
 		F04B26DB2467DD23000CDD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B26DA2467DD23000CDD92 /* AppDelegate.swift */; };
 		F04B26DD2467DD23000CDD92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B26DC2467DD23000CDD92 /* SceneDelegate.swift */; };
 		F04B26DF2467DD23000CDD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B26DE2467DD23000CDD92 /* ViewController.swift */; };
-		F04B26E22467DD23000CDD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04B26E02467DD23000CDD92 /* Main.storyboard */; };
 		F04B26E52467DD23000CDD92 /* CoreML_Vision.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F04B26E32467DD23000CDD92 /* CoreML_Vision.xcdatamodeld */; };
 		F04B26E72467DD25000CDD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04B26E62467DD25000CDD92 /* Assets.xcassets */; };
 		F04B26EA2467DD25000CDD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04B26E82467DD25000CDD92 /* LaunchScreen.storyboard */; };
 		F04B26F52467DD25000CDD92 /* CoreML_VisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B26F42467DD25000CDD92 /* CoreML_VisionTests.swift */; };
 		F04B27002467DD25000CDD92 /* CoreML_VisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B26FF2467DD25000CDD92 /* CoreML_VisionUITests.swift */; };
+		F04B270E2467DE41000CDD92 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F04B270D2467DE41000CDD92 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		F04B26DA2467DD23000CDD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04B26DC2467DD23000CDD92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F04B26DE2467DD23000CDD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F04B26E12467DD23000CDD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F04B26E42467DD23000CDD92 /* CoreML_Vision.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreML_Vision.xcdatamodel; sourceTree = "<group>"; };
 		F04B26E62467DD25000CDD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F04B26E92467DD25000CDD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		F04B26FB2467DD25000CDD92 /* CoreML VisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML VisionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04B26FF2467DD25000CDD92 /* CoreML_VisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_VisionUITests.swift; sourceTree = "<group>"; };
 		F04B27012467DD25000CDD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04B270D2467DE41000CDD92 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = "../../../../Desktop/CoreML-Vision-master/CoreML-Vision-Demo/Resnet50.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 				F04B26DA2467DD23000CDD92 /* AppDelegate.swift */,
 				F04B26DC2467DD23000CDD92 /* SceneDelegate.swift */,
 				F04B26DE2467DD23000CDD92 /* ViewController.swift */,
-				F04B26E02467DD23000CDD92 /* Main.storyboard */,
 				F04B26E62467DD25000CDD92 /* Assets.xcassets */,
+				F04B270D2467DE41000CDD92 /* Resnet50.mlmodel */,
 				F04B26E82467DD25000CDD92 /* LaunchScreen.storyboard */,
 				F04B26EB2467DD25000CDD92 /* Info.plist */,
 				F04B26E32467DD23000CDD92 /* CoreML_Vision.xcdatamodeld */,
@@ -237,7 +237,6 @@
 			files = (
 				F04B26EA2467DD25000CDD92 /* LaunchScreen.storyboard in Resources */,
 				F04B26E72467DD25000CDD92 /* Assets.xcassets in Resources */,
-				F04B26E22467DD23000CDD92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04B270E2467DE41000CDD92 /* Resnet50.mlmodel in Sources */,
 				F04B26DF2467DD23000CDD92 /* ViewController.swift in Sources */,
 				F04B26DB2467DD23000CDD92 /* AppDelegate.swift in Sources */,
 				F04B26DD2467DD23000CDD92 /* SceneDelegate.swift in Sources */,
@@ -301,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F04B26E02467DD23000CDD92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F04B26E12467DD23000CDD92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F04B26E82467DD25000CDD92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
